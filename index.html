@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spice Collective - සැබෑ රසයේ අභිمানය</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&family=Noto+Sans+Sinhala:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="brand-name">The Spice Collective</span>
+                <span class="sinhala-tagline">කුළුබඩු ගෙදර</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#story" class="nav-link">Our Story</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-blob blob-1"></div>
+            <div class="hero-blob blob-2"></div>
+            <div class="hero-blob blob-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">⭐</span>
+                <span>Premium Sri Lankan Spices</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="title-word">Heritage</span>
+                <span class="title-word">in Every</span>
+                <span class="title-word highlight">Grain</span>
+            </h1>
+            
+            <p class="hero-subtitle">සැබෑ රසයේ අභිමානය</p>
+            <p class="hero-description">Discover premium Sri Lankan spices that transform every meal into an experience.</p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Spice Varieties</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Organic Quality</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label">Years Heritage</span>
+                </div>
+            </div>
+            
+            <button class="cta-button magnetic-btn">
+                <span>Explore Collection</span>
+                <span class="btn-arrow">→</span>
+            </button>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="floating-elements">
+                <div class="float-icon icon-1">🌶️</div>
+                <div class="float-icon icon-2">🌟</div>
+                <div class="float-icon icon-3">💛</div>
+            </div>
+            
+            <div class="hero-carousel">
+                <div class="carousel-slide active" style="background-image: url('images/1.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('images/2.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('images/3.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('images/4.jpg')"></div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-dot" data-slide="0" style="opacity: 1;"></button>
+                    <button class="carousel-dot" data-slide="1"></button>
+                    <button class="carousel-dot" data-slide="2"></button>
+                    <button class="carousel-dot" data-slide="3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="story-container">
+            <h2 class="section-title">From Sri Lankan Soil to Your Table</h2>
+            <div class="story-grid">
+                <div class="story-card glass-card">
+                    <div class="card-icon">🌱</div>
+                    <img src="images/story/heritage.jpg" alt="Heritage Sourcing" class="story-image" onerror="this.style.display='none'">
+                    <h3>Heritage Sourcing</h3>
+                    <p>Cultivated from generations of Sri Lankan agricultural expertise, our spices embody tradition and quality.</p>
+                </div>
+                <div class="story-card glass-card">
+                    <div class="card-icon">⚗️</div>
+                    <img src="images/story/processing.jpg" alt="Premium Processing" class="story-image" onerror="this.style.display='none'">
+                    <h3>Premium Processing</h3>
+                    <p>Hand-selected and carefully processed to preserve the authentic aroma and flavor profiles.</p>
+                </div>
+                <div class="story-card glass-card">
+                    <div class="card-icon">✨</div>
+                    <img src="images/story/delivery.jpg" alt="Modern Delivery" class="story-image" onerror="this.style.display='none'">
+                    <h3>Modern Delivery</h3>
+                    <p>Delivered fresh to your doorstep with our commitment to quality and excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Big Three Products -->
+    <section id="products" class="products-section">
+        <h2 class="section-title">Premium Collection</h2>
+        <p class="section-subtitle">Hand-picked & Premium Quality Spices from Sri Lanka</p>
+        <div class="bento-grid">
+            <div class="product-card glass-card heat-level-high" data-heat="9">
+                <div class="product-badge">Popular</div>
+                <img src="images/products/red-chili.jpg" alt="Red Chili Premium Spice" class="product-image chili">
+                <h3 class="product-name">Red Chili</h3>
+                <p class="product-description">Fiery and bold, our red chili brings the heat to every dish.</p>
+                <div class="heat-meter">
+                    <span class="heat-bar" style="width: 90%"></span>
+                </div>
+                <p class="heat-label">Heat: 9/10</p>
+                <div class="product-pricing">
+                    <span class="price">Rs. 450</span>
+                    <span class="unit">/ 100g</span>
+                </div>
+                <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card glass-card heat-level-medium" data-heat="5">
+                <div class="product-badge">Best Seller</div>
+                <img src="images/products/black-pepper.jpg" alt="Black Pepper Premium Spice" class="product-image pepper">
+                <h3 class="product-name">Black Pepper</h3>
+                <p class="product-description">Aromatic and versatile, the king of spices.</p>
+                <div class="heat-meter">
+                    <span class="heat-bar" style="width: 50%"></span>
+                </div>
+                <p class="heat-label">Heat: 5/10</p>
+                <div class="product-pricing">
+                    <span class="price">Rs. 380</span>
+                    <span class="unit">/ 100g</span>
+                </div>
+                <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card glass-card heat-level-low" data-heat="2">
+                <div class="product-badge">Health</div>
+                <img src="images/products/turmeric.jpg" alt="Golden Turmeric Premium Spice" class="product-image turmeric">
+                <h3 class="product-name">Golden Turmeric</h3>
+                <p class="product-description">Warm and earthy, the golden treasure of wellness.</p>
+                <div class="heat-meter">
+                    <span class="heat-bar" style="width: 20%"></span>
+                </div>
+                <p class="heat-label">Heat: 2/10</p>
+                <div class="product-pricing">
+                    <span class="price">Rs. 420</span>
+                    <span class="unit">/ 100g</span>
+                </div>
+                <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- More Products -->
+        <div class="more-products-section">
+            <h3 class="subsection-title">More Premium Spices</h3>
+            <div class="product-grid">
+                <div class="product-card-mini glass-card">
+                    <img src="images/products/cinnamon.jpg" alt="Ceylon Cinnamon" class="mini-image cinnamon">
+                    <span class="product-icon">🤎</span>
+                    <h4>Ceylon Cinnamon</h4>
+                    <p class="aroma-profile">Sweet & Aromatic</p>
+                    <div class="mini-pricing">
+                        <span class="price">Rs. 650</span>
+                        <span class="unit">/ 50g</span>
+                    </div>
+                    <button class="mini-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card-mini glass-card">
+                    <img src="images/products/cloves.jpg" alt="Premium Cloves" class="mini-image cloves">
+                    <span class="product-icon">🖤</span>
+                    <h4>Premium Cloves</h4>
+                    <p class="aroma-profile">Strong & Warm</p>
+                    <div class="mini-pricing">
+                        <span class="price">Rs. 780</span>
+                        <span class="unit">/ 50g</span>
+                    </div>
+                    <button class="mini-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card-mini glass-card">
+                    <img src="images/products/cardamom.jpg" alt="Green Cardamom" class="mini-image cardamom">
+                    <span class="product-icon">💚</span>
+                    <h4>Green Cardamom</h4>
+                    <p class="aroma-profile">Fresh & Fruity</p>
+                    <div class="mini-pricing">
+                        <span class="price">Rs. 920</span>
+                        <span class="unit">/ 50g</span>
+                    </div>
+                    <button class="mini-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card-mini glass-card">
+                    <img src="images/products/nutmeg.jpg" alt="Muscat Nutmeg" class="mini-image nutmeg">
+                    <span class="product-icon">🟤</span>
+                    <h4>Muscat Nutmeg</h4>
+                    <p class="aroma-profile">Warm & Sweet</p>
+                    <div class="mini-pricing">
+                        <span class="price">Rs. 850</span>
+                        <span class="unit">/ 50g</span>
+                    </div>
+                    <button class="mini-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card-mini glass-card">
+                    <img src="images/products/cumin.jpg" alt="Cumin Seeds" class="mini-image cumin">
+                    <span class="product-icon">⭐</span>
+                    <h4>Cumin Seeds</h4>
+                    <p class="aroma-profile">Nutty & Earthy</p>
+                    <div class="mini-pricing">
+                        <span class="price">Rs. 380</span>
+                        <span class="unit">/ 100g</span>
+                    </div>
+                    <button class="mini-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card-mini glass-card">
+                    <img src="images/products/fenugreek.jpg" alt="Fenugreek Seeds" class="mini-image fenugreek">
+                    <span class="product-icon">✨</span>
+                    <h4>Fenugreek Seeds</h4>
+                    <p class="aroma-profile">Maple & Spice</p>
+                    <div class="mini-pricing">
+                        <span class="price">Rs. 320</span>
+                        <span class="unit">/ 100g</span>
+                    </div>
+                    <button class="mini-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heat Level Visualizer -->
+    <section class="visualizer-section">
+        <h2 class="section-title">Spice Heat Level Visualizer</h2>
+        <div class="visualizer-container">
+            <input type="range" id="heatSlider" class="heat-slider" min="1" max="10" value="5">
+            <div class="heat-display">
+                <span class="heat-value" id="heatValue">5</span>
+                <span class="heat-text" id="heatText">Balanced</span>
+            </div>
+            <div class="color-preview" id="colorPreview"></div>
+        </div>
+    </section>
+
+    <!-- Heritage Map Section -->
+    <section id="story" class="heritage-section">
+        <h2 class="section-title">Sri Lankan Spice Heritage</h2>
+        <p class="section-subtitle">Experience the Beauty of Our Spice Origins</p>
+        <div class="map-container">
+            <div class="heritage-gallery">
+                <img src="images/2.jpg" alt="Sri Lankan Spice Heritage Collection" class="gallery-image">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Our Heritage</h3>
+                        <p>Premium spices sourced from the finest regions of Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-legend">
+                <h3>Spice Regions of Sri Lanka</h3>
+                <div class="legend-items">
+                    <div class="legend-item region-item-1">
+                        <div class="legend-circle"></div>
+                        <div class="legend-text">
+                            <p class="legend-title">🌶️ Central Highlands</p>
+                            <p class="legend-desc">Red Chili, Black Pepper, Turmeric</p>
+                            <p class="legend-location">Kandy, Nuwara Eliya</p>
+                        </div>
+                    </div>
+
+                    <div class="legend-item region-item-2">
+                        <div class="legend-circle"></div>
+                        <div class="legend-text">
+                            <p class="legend-title">🫑 Western Region</p>
+                            <p class="legend-desc">Ceylon Cinnamon, Cloves</p>
+                            <p class="legend-location">Colombo, Gampaha</p>
+                        </div>
+                    </div>
+
+                    <div class="legend-item region-item-3">
+                        <div class="legend-circle"></div>
+                        <div class="legend-text">
+                            <p class="legend-title">🫒 Southern Region</p>
+                            <p class="legend-desc">Nutmeg, Mace, Vanilla</p>
+                            <p class="legend-location">Galle, Matara</p>
+                        </div>
+                    </div>
+
+                    <div class="legend-item region-item-4">
+                        <div class="legend-circle"></div>
+                        <div class="legend-text">
+                            <p class="legend-title">💛 Eastern Region</p>
+                            <p class="legend-desc">Cumin, Fenugreek, Cardamom</p>
+                            <p class="legend-location">Batticaloa, Trincomalee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-subtitle">සඳහන් අදහස් සහ අनුභවයන්</p>
+        
+        <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card glass-card">
+                <div class="testimonial-header">
+                    <div class="avatar">👨‍🍳</div>
+                    <div class="client-info">
+                        <h4>Chef Lasantha</h4>
+                        <p class="role">Professional Chef, Colombo</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="testimonial-text">"The quality of spices is exceptional! My dishes have transformed since using The Spice Collective. The turmeric especially is incredibly vibrant and fresh. Highly recommended for all professional chefs!"</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card glass-card">
+                <div class="testimonial-header">
+                    <div class="avatar">👩‍🏠️</div>
+                    <div class="client-info">
+                        <h4>Priya Wickrama</h4>
+                        <p class="role">Home Chef, Kandy</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="testimonial-text">"I absolutely love these spices! They're authentic, fresh, and make cooking so much more enjoyable. My family can taste the difference immediately. Worth every penny!"</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card glass-card">
+                <div class="testimonial-header">
+                    <div class="avatar">🍽️</div>
+                    <div class="client-info">
+                        <h4>Arun Perera</h4>
+                        <p class="role">Restaurant Owner, Galle</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="testimonial-text">"Best supplier for authentic Sri Lankan spices. Consistent quality, reliable delivery, and excellent customer service. Our guests always compliment the flavors of our dishes!"</p>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card glass-card">
+                <div class="testimonial-header">
+                    <div class="avatar">💼</div>
+                    <div class="client-info">
+                        <h4>Sarah Khan</h4>
+                        <p class="role">Food Blogger, Colombo</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="testimonial-text">"As someone who reviews food products, I'm impressed by The Spice Collective's commitment to quality. These are premium spices that deserve a spot in every kitchen!"</p>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="testimonial-card glass-card">
+                <div class="testimonial-header">
+                    <div class="avatar">🏪</div>
+                    <div class="client-info">
+                        <h4>Merchant Dias</h4>
+                        <p class="role">Grocery Store Owner, Negombo</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="testimonial-text">"My customers are extremely satisfied with these spices. They keep coming back asking for The Spice Collective brand specifically. This has become my best-selling spice line!"</p>
+            </div>
+
+            <!-- Testimonial 6 -->
+            <div class="testimonial-card glass-card">
+                <div class="testimonial-header">
+                    <div class="avatar">👨‍⚕️</div>
+                    <div class="client-info">
+                        <h4>Dr. Roshan Silva</h4>
+                        <p class="role">Health Consultant, Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="testimonial-text">"100% organic and authentic! I recommend The Spice Collective to all my patients who want to improve their cooking and health through natural spices. Exceptional quality!"</p>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="testimonials-stats">
+            <div class="stat-item">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4.9★</div>
+                <div class="stat-label">Average Rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Satisfaction Rate</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form glass-card" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button magnetic-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info glass-card">
+                <h3>Quick Ways to Reach Us</h3>
+                <div class="info-item">
+                    <span class="info-icon">📱</span>
+                    <p><strong>WhatsApp:</strong> Quick orders & inquiries</p>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📧</span>
+                    <p><strong>Email:</strong> hello@thespicecollective.lk</p>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🌍</span>
+                    <p><strong>Location:</strong> Colombo, Sri Lanka</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 The Spice Collective. Heritage in Every Grain. සැබෑ රසයේ අභිමානය</p>
+        <p class="privacy-link"><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms & Conditions</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
